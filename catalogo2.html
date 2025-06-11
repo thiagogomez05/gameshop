@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consolas</title>
+       <link rel="icon" type="image/png" sizes="16x16" href="imagenes/icono 2.jpg">
+       <title>Gameshop CTG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo de Gameshop">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="catalogo.html">juegos</a></li>
+                <li><a href="catalogo2.html">consolas</a></li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <style>
+       
+        :root {
+            --primary-dark-grey: #37474F; 
+            --secondary-dark-grey: #455A64; 
+            --medium-grey: #78909C;    
+            --light-grey: #d6d6d6;     
+            --text-color-light: #ECEFF1;
+            --text-color-dark: #263238;  
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d6d6d6;
+            color: var(--text-color-dark);
+        }
+
+        header {
+            background-color: #37474F;
+            color: var(--text-color-light);
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: var(--light-grey); 
+            border-bottom: 1px solid var(--medium-grey);
+        }
+
+        .product-card h2 {
+            font-size: 1.6em;
+            color: var(--secondary-dark-grey);
+            margin: 15px 10px 10px;
+        }
+
+        .product-card p {
+            font-size: 0.95em;
+            color: #555; 
+            padding: 0 15px;
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+
+        .product-card .price {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--primary-dark-grey); 
+            margin-top: 10px;
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        .product-card button {
+            background-color: var(--secondary-dark-grey);
+            color: var(--text-color-light);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #263238; 
+        }
+
+        footer {
+            background-color: var(--primary-dark-grey);
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .product-card {
+                padding-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        #y1 {
+          background-image: url(imagenes/c1.jpg);
+          width: 150px;
+          margin-left: 70px;
+          margin-right: 110px;
+        }
+          #y2 {
+          background-image: url(imagenes/c2.jpg);
+          width: 150px;
+          margin-left: 70px;
+          margin-right: 110px;
+        }
+          #y3 {
+          background-image: url(imagenes/c3.jpg);
+          width: 150px;
+          margin-left: 70px;
+          margin-right: 110px;
+        }
+          #y4 {
+          background-image: url(imagenes/y2.jpg);
+          width: 150px;
+          margin-left: 70px;
+          margin-right: 110px;
+        }
+          #y5 {
+          background-image: url(imagenes/y3.jpg);
+          width: 150px;
+          margin-left: 70px;
+          margin-right: 110px;
+        }
+         #y6 {
+          background-image: url(imagenes/hzd.jpg);
+          width: 150px;
+          margin-left: 70px;
+          margin-right: 110px;
+        }
+        .social-nav{ 
+            background-color: #d6d6d6;
+            align-items: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+    <div class="product-card">
+         <img id="y1" src="imagenes/c1.jpg" alt="consola 1">
+            <h2>Consola god of war</h2>
+            <p>Consola Playstation 4 slim  1tb God Of War Ragnarok Bundle.</p>
+            <span class="price">$1.499.000</span>
+            <button>Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card">
+           <img id="y2" src="imagenes/c2.jpg" alt="consola 2">
+            <h2>Consola call of duty </h2>
+            <p>Consola Sony PlayStation 4 Slim 500GB Call of Duty: Infinite Warfare Bundle color negro azabache.</p>
+            <span class="price">$790.000</span>
+            <button>Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img #y3 src="imagenes/c3.jpg" alt="consola 3">
+            <h2>Consola FIFA 18</h2>
+            <p> Consola Sony Playstation Ps4 Slim 1tb Fifa 2018 1 Joystick.</p>
+            <span class="price">$850.500</span>
+            <button>Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img #y4 src="imagenes/y2.jpg" alt="joystick 2">
+            <h2>Joystick God of war</h2>
+            <p>Joystick Inalámbrico Sony Playstation Ps4 Dualshock 4 skin Adhesivo God of war.</p>
+            <span class="price">$42.000</span>
+            <button>Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img  #y5 src="imagenes/y3.jpg" alt="joystick 3">
+            <h2>Joystick Camouflage</h2>
+            <p>Joystick Inalámbrico Sony Playstation Ps4 Dualshock 4 Color Green Camouflage.</p>
+            <span class="price">$75.000</span>
+            <button>Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img #y6 src="imagenes/y1.jpg" alt="joystick 1">
+            <h2>Joystick Casla</h2>
+            <p>Joystick Inalámbrico Sony Playstation Ps4 Dualshock 4 Skin Adhesivo Camiseta San Lorenzo.</p>
+            <span class="price">$47.999</span>
+            <button>Añadir al Carrito</button>
+        </div>
+    </main>
+ <nav>
+    <script src="https://kit.fontawesome.com/14bdcc382b.js" crossorigin="anonymous"></script>
+        <body>
+        <nav class="social-nav">
+           <h1>
+             <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-x"></i></a>
+            <a href="https://www.instagram.com/thiago_nehuen_?igsh=MTl5OGZsNWQ0Y3c0NA==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/541127258364" target="_blank"><i class="fab fa-whatsapp"></i></a>
+           </h1>
+        </nav>
+    <footer>
+        <p>&copy; 2025 Gameshop CTG. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+    
